@@ -10,7 +10,14 @@ dependencies {
 }
 
 tasks.withType<ShadowJar> {
-    archiveBaseName.set("core")
+    archiveBaseName.set("school")
     archiveClassifier.set("")
-    archiveVersion.set("")
+
+    manifest {
+        attributes(
+            mapOf(
+                "Main-Class" to "tech.zmario.school.Application"
+            )
+        )
+    }
 }
