@@ -51,7 +51,7 @@ public abstract class Command {
             selection = Integer.parseInt(scanner.nextLine());
 
             if (selection < 1 || selection > maxSize) throw new NumberFormatException();
-        } catch (NumberFormatException e) {
+        } catch (Exception e) {
             logger.error("Invalid selection. Please try again.");
 
             return validateSelection(logger, scanner, maxSize);
