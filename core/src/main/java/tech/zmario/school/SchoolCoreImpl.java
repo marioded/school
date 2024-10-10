@@ -5,8 +5,8 @@ import org.apache.logging.log4j.Logger;
 import tech.zmario.school.api.SchoolCore;
 import tech.zmario.school.api.service.CommandService;
 import tech.zmario.school.api.service.ExerciseService;
-import tech.zmario.school.service.CommandServiceImpl;
-import tech.zmario.school.service.ExerciseServiceImpl;
+import tech.zmario.school.service.impl.CommandServiceImpl;
+import tech.zmario.school.service.impl.ExerciseServiceImpl;
 
 /**
  * Main class of the application.

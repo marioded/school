@@ -1,4 +1,4 @@
-package tech.zmario.school.service;
+package tech.zmario.school.service.impl;
 
 import tech.zmario.school.api.SchoolCore;
 import tech.zmario.school.api.command.Command;

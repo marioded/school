@@ -1,4 +1,4 @@
-package tech.zmario.school.service;
+package tech.zmario.school.service.impl;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
