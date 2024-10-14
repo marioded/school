@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 import tech.zmario.school.api.SchoolCore;
 import tech.zmario.school.api.command.Command;
 import tech.zmario.school.api.exercise.Exercise;
+import tech.zmario.school.api.util.SelectionUtils;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -34,7 +35,7 @@ public class ExerciseCommand extends Command {
 
         LOGGER.info("{}. Go back to the help page.", ++id);
 
-        int selection = validateSelection(LOGGER, scanner, exercises.size() + 1);
+        int selection = SelectionUtils.validateSelection(LOGGER, scanner, exercises.size() + 1);
 
         if (selection == id) {
             schoolCore.commandService().showHelpPage(scanner);

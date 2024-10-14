@@ -4,6 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import tech.zmario.school.api.SchoolCore;
 import tech.zmario.school.api.command.Command;
+import tech.zmario.school.api.util.SelectionUtils;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -32,7 +33,7 @@ public class HelpCommand extends Command {
 
         LOGGER.info("Please select a command.");
 
-        int selection = validateSelection(LOGGER, scanner, commands.size());
+        int selection = SelectionUtils.validateSelection(LOGGER, scanner, commands.size());
         Command command = commands.get(selection);
 
         LOGGER.info("> Selected command: {}\n", command.name());
