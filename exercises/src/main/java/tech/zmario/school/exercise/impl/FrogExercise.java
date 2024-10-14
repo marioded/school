@@ -32,7 +32,7 @@ public class FrogExercise extends Exercise {
 
     @Override
     public void solve(Scanner scanner) {
-        int days = 0;
+        int days = 1;
         int height = 0;
 
         while (true) {
