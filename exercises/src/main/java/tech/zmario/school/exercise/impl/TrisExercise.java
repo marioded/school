@@ -143,8 +143,11 @@ public class TrisExercise extends Exercise {
      */
     private boolean won(char[][] board, char winCharacter) {
         for (int i = 0; i < 3; i++) { // Controlla le righe
-            if (board[i][0] == winCharacter && board[i][1] == winCharacter && board[i][2] == winCharacter)
+            if (board[i][0] == winCharacter &&
+                board[i][1] == winCharacter &&
+                board[i][2] == winCharacter) {
                 return true;
+            }
         }
 
         for (int i = 0; i < 3; i++) { // Controlla le colonne
