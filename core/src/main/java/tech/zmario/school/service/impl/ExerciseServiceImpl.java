@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
 import tech.zmario.school.api.exercise.Exercise;
 import tech.zmario.school.api.service.ExerciseService;
+import tech.zmario.school.exercise.impl.BalanceExercise;
 import tech.zmario.school.exercise.impl.FrogExercise;
 import tech.zmario.school.exercise.impl.TrisExercise;
 
@@ -18,6 +19,7 @@ public class ExerciseServiceImpl implements ExerciseService {
     private static final Logger LOGGER = LogManager.getLogger(ExerciseServiceImpl.class);
     private static final List<Exercise> DEFAULT_EXERCISES = List.of(
             new FrogExercise(),
+            new BalanceExercise(),
             new TrisExercise()
     );
 
